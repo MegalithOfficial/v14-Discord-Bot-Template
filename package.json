@@ -1,17 +1,13 @@
 {
-  "name": "ferlexbotguardian",
+  "name": "v14bosaltyapi",
   "version": "1.0.0",
-  "description": "V13 FerlexBot Guardian boş altyapı",
+  "description": "V14 boş altyapı",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": "16.x"
-  },
   "author": "TheSid",
   "dependencies": {
-    "@discordjs/builders": "^1.0.0",
     "@discordjs/rest": "^1.0.0",
     "discord-api-types": "^0.36.2",
     "discord.js": "^14.0.1"
