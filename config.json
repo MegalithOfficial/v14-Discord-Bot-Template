@@ -1,7 +1,7 @@
-	{
-  "token": "Tokeniniz",
-	"appId": "Bot idiniz",
-	"guildId": "Sunucu idniz Eğer HandlerMode Guildde ise boş get",
-	"HandlerMode": "Global Eğer grup özel istiyorsan Guild yaz",
-	"ownerId": "Sahip idisi"
-  }
+{
+ "token": "Tokeniniz",
+ "appId": "Bot idiniz",
+ "guildId": "Sunucu idniz Eğer HandlerMode Guildde ise boş get",
+ "HandlerMode": "Global Eğer grup özel istiyorsan Guild yaz",
+ "ownerId": "Sahip idisi"
+}
