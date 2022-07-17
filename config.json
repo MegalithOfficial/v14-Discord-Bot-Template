@@ -2,6 +2,6 @@
 	"token": "Tokeniniz",
 	"appId": "Bot idiniz",
 	"guildId": "Sunucu idniz Eğer HandlerMode Guildde ise boş get",
-	"HandlerMode": "Global",
+	"HandlerMode": "Global Eğer grup özel istiyorsan Guild yaz",
 	"ownerId": "Sahip idisi"
 }
