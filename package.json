@@ -8,8 +8,8 @@
   },
   "author": "TheSid",
   "dependencies": {
-    "@discordjs/rest": "^1.0.0",
-    "discord-api-types": "^0.36.2",
+    "@discordjs/rest": "^1.0.1",
+    "discord-api-types": "^0.37.2",
     "discord.js": "^14.2.0"
   }
 }
