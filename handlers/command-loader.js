@@ -29,13 +29,13 @@ const rest = new REST({ version: '10' }).setToken(token);
 
 (async () => {
   try {
-    if(HandlerMode === "Guild") {
+    if(handlerMode.toLocaleUpperCase == "GUILD" || handlerMode.toLowerCase == "guild" || handlerMode === "Guild") {
 
     await rest.put(
       Routes.applicationGuildCommands(appId, guildId),
       { body: commands }
     )
-    } else if(HandlerMode === "Global") {
+    } else if(handlerMode.toLocaleUpperCase == "GLOBAL" || handlerMode.toLowerCase == "global" || handlerMode === "Global") {
 
       await rest.put(
         Routes.applicationCommands(appId),
