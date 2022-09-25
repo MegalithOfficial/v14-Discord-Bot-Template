@@ -1,6 +1,6 @@
 # v14-Altpayı
 Türkiyede ilk V14 altyapı
-TheSidOffical ve Westydev sunar.
+MegalithOffical ve Westydev sunar.
 
 # Kurulum
 
