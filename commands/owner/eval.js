@@ -1,5 +1,5 @@
 const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
-const { ownerId } = require('../../config.json');
+const { bot, colors } = require('../../config');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -11,7 +11,7 @@ module.exports = {
        .setRequired(true)),
     async execute (interaction) {
       
-    if(interaction.user.id !== ownerId) return interaction.reply(':no_entry:');
+    if(interaction.user.id !== bot.ownerId) return interaction.reply(':no_entry:');
     try {
 
       let code = interaction.options.getString('code')
@@ -24,12 +24,14 @@ module.exports = {
         ephemeral: true,
         embeds: [
           new EmbedBuilder()
-          .setColor("GREEN")
-          .addField('INPUT', `\`\`\`js\n${code}\`\`\``)
-          .addField('OUTPUT', `\`\`\`js\n${evaled.length > 1000 ? `${evaled.slice(0, 1000)}...` : `${clean(evaled)}` }\`\`\``)
-          .addField('Length', `\`${evaled.length}\``, true)
-          .addField('Delay', `\`0.0${interaction.client.ws.ping} MS\``, true),
-        ],
+          .setColor(colors.green)
+          .addFields( 
+            {name: 'INPUT', value:  `\`\`\`js\n${code}\`\`\``},
+            {name: 'OUTPUT', value:  `\`\`\`js\n${evaled.length > 1000 ? `${evaled.slice(0, 1000)}...` : `${clean(evaled)}` }\`\`\``},
+            {name: 'Length', value:  `\`${evaled.length}\``, inline: true},
+            {name: 'Delay', value:  `\`0.0${interaction.client.ws.ping} MS\``, inline: true},
+          )
+        ]
       });
   
     } catch (err) {
@@ -38,8 +40,10 @@ module.exports = {
         ephemeral: true,
         embeds: [
           new EmbedBuilder()
-          .setColor("RED")
-          .addField('ERROR', `\`\`\`js\n${clean(err).length > 1000 ? `${clean(err).slice(0, 1000)}...` : `${clean(err)}`}\n\`\`\``),
+          .setColor(colors.red)
+          .addFields( 
+            {name: 'ERROR', value:  `\`\`\`js\n${clean(err).length > 1000 ? `${clean(err).slice(0, 1000)}...` : `${clean(err)}`}\n\`\`\``},
+          )        
         ],
       });
     };
@@ -52,3 +56,7 @@ module.exports = {
     };
   }
 }
+
+/*
+.addField('ERROR', `\`\`\`js\n${clean(err).length > 1000 ? `${clean(err).slice(0, 1000)}...` : `${clean(err)}`}\n\`\`\``),
+*/

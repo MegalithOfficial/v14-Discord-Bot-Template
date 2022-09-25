@@ -1,5 +1,5 @@
 const { EmbedBuilder, SlashCommandBuilder } = require('discord.js')
-
+const { colors } = require('../../config');
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -16,7 +16,7 @@ module.exports = {
 
       const embed = new EmbedBuilder()
       .setDescription(`Bu mesaj Çalışıyor!! \n String input: ${string}`)
-      .setColor("#00ff00")
+      .setColor(colors.green)
      await interaction.reply({ embeds: [embed] })
   }
 }

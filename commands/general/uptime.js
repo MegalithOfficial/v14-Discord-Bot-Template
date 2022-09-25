@@ -1,4 +1,5 @@
 const { EmbedBuilder, SlashCommandBuilder } = require('discord.js')
+const { colors } = require('../../config');
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -15,7 +16,7 @@ module.exports = {
 
       const embed = new EmbedBuilder()
       .setDescription(`The bot has been online for ${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds.`)
-      .setColor("#00ff00")
+      .setColor(colors.green)
      await interaction.reply({ embeds: [embed] })
   }
 }

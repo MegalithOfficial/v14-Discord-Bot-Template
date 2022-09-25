@@ -1,15 +1,19 @@
 {
   "name": "v14bosaltyapi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "V14 boş altyapı",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js",
+    "dev": "nodemon main.js"
   },
-  "author": "TheSid",
+  "author": "MegalithOffical",
   "dependencies": {
-    "@discordjs/rest": "^1.0.1",
-    "discord-api-types": "^0.37.2",
-    "discord.js": "^14.2.0"
+    "@discordjs/rest": "^1.1.0",
+    "discord-api-types": "^0.37.10",
+    "discord.js": "^14.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

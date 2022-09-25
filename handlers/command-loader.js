@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const { REST } = require('@discordjs/rest')
 const { Routes } = require('discord-api-types/v10')
-const { appId, guildId, token, HandlerMode } = require('../config.json')
+const { bot } = require('../config')
 
 const commands = []
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'))
@@ -29,13 +29,13 @@ const rest = new REST({ version: '10' }).setToken(token);
 
 (async () => {
   try {
-    if(handlerMode.toLocaleUpperCase === "GUILD" || handlerMode.toLowerCase === "guild" || handlerMode === "Guild") {
+    if(bot.handlerMode.toLocaleUpperCase() === "GUILD" || bot.handlerMode.toLowerCase() === "guild" || bot.handlerMode === "Guild") {
 
     await rest.put(
       Routes.applicationGuildCommands(appId, guildId),
       { body: commands }
     )
-    } else if(handlerMode.toLocaleUpperCase === "GLOBAL" || handlerMode.toLowerCase === "global" || handlerMode === "Global") {
+    } else if(bot.handlerMode.toLocaleUpperCase() === "GLOBAL" || bot.handlerMode.toLowerCase() === "global" || bot.handlerMode === "Global") {
 
       await rest.put(
         Routes.applicationCommands(appId),
@@ -43,11 +43,11 @@ const rest = new REST({ version: '10' }).setToken(token);
       )
 
     } else {
-      console.log("[Command-Loader] Geçersiz HandlerModu.")
+      console.log("[Command-Loader] Invalid handler mode: " + bot.handlerMode)
       process.exit(0)
     }
 
-    console.log('[Command-Loader] Komutlar yüklendi!')
+    console.log('[Command-Loader] Slash Commands Loaded.')
   } catch (error) {
     console.error(error)
   }
