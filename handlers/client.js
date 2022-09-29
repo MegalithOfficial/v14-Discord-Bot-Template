@@ -24,6 +24,6 @@ module.exports = class extends Client {
   }
 
   login() {
-    this.login(bot.token).catch(e => console.log(e))
+    super.login(bot.token).catch(e => console.log(e))
   };
 };
