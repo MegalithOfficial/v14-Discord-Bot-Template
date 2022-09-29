@@ -14,16 +14,16 @@ module.exports = class extends Client {
       }
     });
     global.client = this
+  
+    require("../handlers/command-loader")
+    require("../handlers/command-handler")(this)
+    require("../handlers/event-handler")(this)
+
     process.on("unhandledRejection", (reason, promise) => console.log(reason, promise))
     process.on("uncaughtException", (err) => console.log(err))
   }
 
-  start() {
-
-    require("../handlers/command-loader")
-    require("../handlers/command-handler")(this)
-    require("../handlers/event-handler")(this)
+  login() {
     this.login(bot.token).catch(e => console.log(e))
   };
 };
-
