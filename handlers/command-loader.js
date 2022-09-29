@@ -25,20 +25,20 @@ for (const file of commandFiles) {
   commands.push(command.data.toJSON())
 }
 
-const rest = new REST({ version: '10' }).setToken(token);
+const rest = new REST({ version: '10' }).setToken(bot.token);
 
 (async () => {
   try {
     if(bot.handlerMode.toLocaleUpperCase() === "GUILD" || bot.handlerMode.toLowerCase() === "guild" || bot.handlerMode === "Guild") {
 
     await rest.put(
-      Routes.applicationGuildCommands(appId, guildId),
+      Routes.applicationGuildCommands(bot.appId, bot.guildId),
       { body: commands }
     )
     } else if(bot.handlerMode.toLocaleUpperCase() === "GLOBAL" || bot.handlerMode.toLowerCase() === "global" || bot.handlerMode === "Global") {
 
       await rest.put(
-        Routes.applicationCommands(appId),
+        Routes.applicationCommands(bot.appId),
         { body: commands }
       )
 
