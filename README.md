@@ -5,5 +5,5 @@ MegalithOffical ve Westydev sunar.
 # Kurulum
 
 1. Projeyi clonelayın ve CMD açıp `npm i` yazın.
-2. config.json içindeki yerleri doldurun
+2. `config.js` içindeki yerleri doldurun
 3. Aynı CMD üzerinden `node .` yazın ve Botunuz aktif.
