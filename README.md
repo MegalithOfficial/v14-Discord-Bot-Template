@@ -1,6 +1,6 @@
 # v14-Altpayı
 Türkiyede ilk V14 altyapı
-MegalithOffical ve Westydev sunar.
+MegalithOffical sunar.
 
 - **Yeni başlayanlar için uygun.**
 - **Sade bir sistem karışık tonlarca şey yok.**
