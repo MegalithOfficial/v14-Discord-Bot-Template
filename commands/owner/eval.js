@@ -56,7 +56,3 @@ module.exports = {
     };
   }
 }
-
-/*
-.addField('ERROR', `\`\`\`js\n${clean(err).length > 1000 ? `${clean(err).slice(0, 1000)}...` : `${clean(err)}`}\n\`\`\``),
-*/
