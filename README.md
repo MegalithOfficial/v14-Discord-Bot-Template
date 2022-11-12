@@ -10,7 +10,7 @@ Megalith sunar.
 
 # SSS:
 ## Main niye bukadar kısa! ben client.on kodlarımı nereye koyacağım!?
-client.on olan komutlarınızı events adlı klasörde hangi eventi kullanıyorsa eventadı.js şekinde dosya oluşturup yapabilirsiniz.
+client.on olan komutlarınızı events adlı klasörde hangi eventi kullanıyorsa `eventadı.js` şekinde dosya oluşturup yapabilirsiniz.
 Örnek event dosyası örnekler klasöründe mevcut.
 
 ## botta Slash komutlar gözükmüyor!
