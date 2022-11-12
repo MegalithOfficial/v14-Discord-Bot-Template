@@ -9,7 +9,7 @@ Megalith sunar.
 3. Aynı CMD üzerinden `node .` yazın ve Botunuz aktif.
 
 # SSS:
-## Main niye bukadar kısa! ben client.on kodlarımı nereye koyucağım!?
+## Main niye bukadar kısa! ben client.on kodlarımı nereye koyacağım!?
 client.on olan komutlarınızı events adlı klasörde hangi eventi kullanıyorsa eventadı.js şekinde dosya oluşturup yapabilirsiniz.
 Örnek event dosyası örnekler klasöründe mevcut.
 
