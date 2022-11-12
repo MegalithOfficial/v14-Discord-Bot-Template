@@ -1,5 +1,7 @@
+const { Events } = require('discord.js');
+
 module.exports = {
-  name: 'ready',
+  name: Events.ClientReady,
   once: true,
   execute (client) {
     const now = new Date()

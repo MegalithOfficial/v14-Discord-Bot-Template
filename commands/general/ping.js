@@ -3,7 +3,7 @@ const { colors } = require('../../config');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('ping')
-    .setDescription('Replies with the current latency.'),
+    .setDescription('Bot pingi gösterir.'),
   async execute (interaction) {
     const embed = new EmbedBuilder()
      .setColor(colors.green)

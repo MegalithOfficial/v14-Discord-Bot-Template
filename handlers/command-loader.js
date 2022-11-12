@@ -1,7 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const { REST } = require('@discordjs/rest')
-const { Routes } = require('discord-api-types/v10')
+const { Routes, REST } = require('discord.js')
 const { bot } = require('../config')
 
 const commands = []
@@ -43,11 +42,11 @@ const rest = new REST({ version: '10' }).setToken(token);
       )
 
     } else {
-      console.log("[Command-Loader] Invalid handler mode: " + bot.handlerMode)
+      console.log("[Command-Loader] Geçersiz Handler modu: " + bot.handlerMode)
       process.exit(0)
     }
 
-    console.log('[Command-Loader] Slash Commands Loaded.')
+    console.log('[Command-Loader] Slash Komutlar yüklendi.')
   } catch (error) {
     console.error(error)
   }

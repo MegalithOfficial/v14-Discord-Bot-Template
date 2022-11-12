@@ -4,7 +4,7 @@ const { colors } = require('../../config');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('uptime')
-    .setDescription('Tells you how long the bot has been running.'),
+    .setDescription('Botun ne kadar süredir aktif olduğunu gösterir.'),
   async execute (interaction) {
     let totalSeconds = (interaction.client.uptime / 1000)
     const days = Math.floor(totalSeconds / 86400)
@@ -15,7 +15,7 @@ module.exports = {
     const seconds = Math.floor(totalSeconds % 60)
 
       const embed = new EmbedBuilder()
-      .setDescription(`The bot has been online for ${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds.`)
+      .setDescription(`Bu bot, ${days} gün(ler), ${hours} saat(ler), ${minutes} dakika(lar) ve ${seconds} saniye(ler)'dir aktif.`)
       .setColor(colors.green)
      await interaction.reply({ embeds: [embed] })
   }
