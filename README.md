@@ -3,7 +3,7 @@ Türkiyede ilk V14 altyapı
 Megalith sunar.
 
 # Güncelleme:
-## Bu altyapının daha iyi versionu çıktı! Link: https://github.com/MegalithOffical/V14-Altyapi-v2
+## Bu altyapının daha iyi versionu Yakında çıkacak! Link: https://github.com/MegalithOffical/V14-Altyapi-v2
 
 # Kurulum
 
