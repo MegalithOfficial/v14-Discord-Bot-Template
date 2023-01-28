@@ -2,9 +2,6 @@
 Türkiyede ilk V14 altyapı
 Megalith sunar.
 
-# Güncelleme:
-## Bu altyapının daha iyi versionu Yakında çıkacak! Link: https://github.com/MegalithOffical/V14-Altyapi-v2
-
 # Kurulum
 
 1. Projeyi clonelayın ve CMD açıp `npm i` yazın.
