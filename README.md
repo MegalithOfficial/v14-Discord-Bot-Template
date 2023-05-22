@@ -1,20 +1,15 @@
-# v14-Altpayı
-Türkiyede ilk V14 altyapı
-Megalith sunar.
+# Megalith Botlist
+- An Advanced Discord Botlist Bot.
 
-# Kurulum
+## Setup
+- 1. Clone the project and open in your terminal.
+- 2. Type `pnpm i` or `npm i` to install dependencies.
+- 3. Rename the `.env.example` to `.env` and fill the environment variables.
+- 4. Start the bot with `npm start` command.
 
-1. Projeyi clonelayın ve CMD açıp `npm i` yazın.
-2. `config.js` içindeki yerleri doldurun.
-3. Aynı CMD üzerinden `node .` yazın ve Botunuz aktif.
+## Patch Notes
+Click [here](https://github.com/MegalithOffical/v14-Discord-Bot-Template/blob/master/CHANGELOG.md) for Patch Notes.
 
-# SSS:
-## Main niye bukadar kısa! ben client.on kodlarımı nereye koyacağım!?
-client.on olan komutlarınızı events adlı klasörde hangi eventi kullanıyorsa `eventadı.js` şekinde dosya oluşturup yapabilirsiniz.
-Örnek event dosyası örnekler klasöründe mevcut.
-
-## botta Slash komutlar gözükmüyor!
-Bunun birkaç nedeni olabilir. 
-1. en sık olan neden: bot doğru scopelar olmadan sunucuya eklenmesi. Çözümü basit, davet oluştururken bu SCOPES kısmını bu şekilde seçmeniz gerek.
-2. en sık görülen hata: appId kısmındaki Id botunuzun Client Idsini girmeniz gerek, eğer girdiyseniz doğru olup olmadığını kontrol edin.
-3. Eğer HandlerMode Guild diye ayarlıysa guildId kısmındaki Idnin doğru olduğundan emin olun.
+# License
+This project is Protected by the MIT License.
+Its not allowed to sell any source code without specific prior written permission.

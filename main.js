@@ -1,1 +1,0 @@
-new (require('./handlers/client'))().login();
