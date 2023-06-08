@@ -22,7 +22,7 @@
     "dotenv": "^16.0.3",
     "eventemitter3": "^5.0.0",
     "lodash": "^4.17.21",
-    "ora": "^6.3.0",
+    "ora": "^6.3.1",
     "wio.db": "^4.0.22"
   },
   "devDependencies": {
