@@ -1,5 +1,5 @@
-# Megalith Botlist
-- An Advanced Discord Botlist Bot.
+# Megalith Advanced Discord Bot Template
+- An Advanced Discord Bot Template.
 
 ## Setup
 - 1. Clone the project and open in your terminal.
