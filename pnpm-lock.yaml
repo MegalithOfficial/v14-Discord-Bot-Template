@@ -5,8 +5,8 @@ dependencies:
     specifier: ^0.16.0
     version: 0.16.0
   '@sapphire/bitfield':
-    specifier: ^1.1.0
-    version: 1.1.0
+    specifier: ^1.2.0
+    version: 1.2.0
   '@sapphire/fetch':
     specifier: ^2.4.1
     version: 2.4.1
@@ -130,8 +130,8 @@ packages:
     engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
     dev: false
 
-  /@sapphire/bitfield@1.1.0:
-    resolution: {integrity: sha512-Lk9xo6pguggLtZ6uCNPZD+Xi4A8pLPf1PNMnaqI2VYp5kcoLy+acC4+lE3Kk1AZksZy1N76gI+/PCovrHMX5Dw==}
+  /@sapphire/bitfield@1.2.0:
+    resolution: {integrity: sha512-XYVBEtmVDKd946/L76UEltCMQ0KxkPnxRQsb2chzttPpGicm0gV1ngXiiy9rdUrOfsRXGl2wbWh6X1++2kBEzA==}
     engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
     dev: false
 
