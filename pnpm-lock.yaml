@@ -11,8 +11,8 @@ dependencies:
     specifier: ^2.4.1
     version: 2.4.1
   '@sapphire/shapeshift':
-    specifier: ^3.8.2
-    version: 3.8.2
+    specifier: ^3.9.2
+    version: 3.9.2
   '@sapphire/stopwatch':
     specifier: ^1.5.0
     version: 1.5.0
@@ -51,7 +51,7 @@ packages:
     dependencies:
       '@discordjs/formatters': 0.3.1
       '@discordjs/util': 0.3.1
-      '@sapphire/shapeshift': 3.8.2
+      '@sapphire/shapeshift': 3.9.2
       discord-api-types: 0.37.41
       fast-deep-equal: 3.1.3
       ts-mixer: 6.0.3
@@ -144,8 +144,8 @@ packages:
       - encoding
     dev: false
 
-  /@sapphire/shapeshift@3.8.2:
-    resolution: {integrity: sha512-NXpnJAsxN3/h9TqQPntOeVWZrpIuucqXI3IWF6tj2fWCoRLCuVK5wx7Dtg7pRrtkYfsMUbDqgKoX26vrC5iYfA==}
+  /@sapphire/shapeshift@3.9.2:
+    resolution: {integrity: sha512-YRbCXWy969oGIdqR/wha62eX8GNHsvyYi0Rfd4rNW6tSVVa8p0ELiMEuOH/k8rgtvRoM+EMV7Csqz77YdwiDpA==}
     engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
     dependencies:
       fast-deep-equal: 3.1.3
