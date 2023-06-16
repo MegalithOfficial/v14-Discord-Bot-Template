@@ -23,8 +23,8 @@ dependencies:
     specifier: 14.11.0
     version: 14.11.0
   dotenv:
-    specifier: ^16.0.3
-    version: 16.0.3
+    specifier: ^16.2.0
+    version: 16.2.0
   eventemitter3:
     specifier: ^5.0.0
     version: 5.0.1
@@ -276,8 +276,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /dotenv@16.0.3:
-    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+  /dotenv@16.2.0:
+    resolution: {integrity: sha512-jcq2vR1DY1+QA+vH58RIrWLDZOifTGmyQJWzP9arDUbgZcySdzuBb1WvhWZzZtiXgfm+GW2pjBqStqlfpzq7wQ==}
     engines: {node: '>=12'}
     dev: false
 
