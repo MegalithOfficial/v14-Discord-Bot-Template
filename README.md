@@ -1,3 +1,5 @@
+# Depracated. Please Switch to https://github.com/MegalithOfficial/Typescript-discord-bot-Template
+
 # Megalith Advanced Discord Bot Template
 - An Advanced Discord Bot Template.
 
